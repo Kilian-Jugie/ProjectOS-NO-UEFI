@@ -19,6 +19,6 @@ Very little kernel using GRUB as bootloader with capabilities :
 Need an i386-elf-g++ cross compiler to be build.
 
 This project has not been made to be released. It's only for testing and learning purpose.
-This project is stopped to create a more efficient kernel with UEFI.
+This project is stopped to create a more efficient kernel using UEFI.
 
 Continuation of this project : ProjectOS-UEFI
