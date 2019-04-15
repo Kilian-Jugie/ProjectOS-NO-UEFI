@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\asm.h" />
+    <ClInclude Include="src\core\cpu.h" />
+    <ClInclude Include="src\core\defines.h" />
+    <ClInclude Include="src\core\kernel.h" />
+    <ClInclude Include="src\core\maths.h" />
+    <ClInclude Include="src\core\memory.h" />
+    <ClInclude Include="src\core\multiboot_extension.h" />
+    <ClInclude Include="src\core\string.h" />
+    <ClInclude Include="src\core\terminal.h" />
+    <ClInclude Include="src\core\vgautils.h" />
+    <ClInclude Include="src\extern\adxintrin.h" />
+    <ClInclude Include="src\extern\ammintrin.h" />
+    <ClInclude Include="src\extern\avx2intrin.h" />
+    <ClInclude Include="src\extern\avx5124fmapsintrin.h" />
+    <ClInclude Include="src\extern\avx5124vnniwintrin.h" />
+    <ClInclude Include="src\extern\avx512bitalgintrin.h" />
+    <ClInclude Include="src\extern\avx512bwintrin.h" />
+    <ClInclude Include="src\extern\avx512cdintrin.h" />
+    <ClInclude Include="src\extern\avx512dqintrin.h" />
+    <ClInclude Include="src\extern\avx512erintrin.h" />
+    <ClInclude Include="src\extern\avx512fintrin.h" />
+    <ClInclude Include="src\extern\avx512ifmaintrin.h" />
+    <ClInclude Include="src\extern\avx512ifmavlintrin.h" />
+    <ClInclude Include="src\extern\avx512pfintrin.h" />
+    <ClInclude Include="src\extern\avx512vbmi2intrin.h" />
+    <ClInclude Include="src\extern\avx512vbmi2vlintrin.h" />
+    <ClInclude Include="src\extern\avx512vbmiintrin.h" />
+    <ClInclude Include="src\extern\avx512vbmivlintrin.h" />
+    <ClInclude Include="src\extern\avx512vlbwintrin.h" />
+    <ClInclude Include="src\extern\avx512vldqintrin.h" />
+    <ClInclude Include="src\extern\avx512vlintrin.h" />
+    <ClInclude Include="src\extern\avx512vnniintrin.h" />
+    <ClInclude Include="src\extern\avx512vnnivlintrin.h" />
+    <ClInclude Include="src\extern\avx512vpopcntdqintrin.h" />
+    <ClInclude Include="src\extern\avx512vpopcntdqvlintrin.h" />
+    <ClInclude Include="src\extern\avxintrin.h" />
+    <ClInclude Include="src\extern\bmi2intrin.h" />
+    <ClInclude Include="src\extern\bmiintrin.h" />
+    <ClInclude Include="src\extern\bmmintrin.h" />
+    <ClInclude Include="src\extern\cet.h" />
+    <ClInclude Include="src\extern\cetintrin.h" />
+    <ClInclude Include="src\extern\clflushoptintrin.h" />
+    <ClInclude Include="src\extern\clwbintrin.h" />
+    <ClInclude Include="src\extern\clzerointrin.h" />
+    <ClInclude Include="src\extern\cpuid.h" />
+    <ClInclude Include="src\extern\cross-stdarg.h" />
+    <ClInclude Include="src\extern\emmintrin.h" />
+    <ClInclude Include="src\extern\f16cintrin.h" />
+    <ClInclude Include="src\extern\float.h" />
+    <ClInclude Include="src\extern\fma4intrin.h" />
+    <ClInclude Include="src\extern\fmaintrin.h" />
+    <ClInclude Include="src\extern\fxsrintrin.h" />
+    <ClInclude Include="src\extern\gcov.h" />
+    <ClInclude Include="src\extern\gfniintrin.h" />
+    <ClInclude Include="src\extern\ia32intrin.h" />
+    <ClInclude Include="src\extern\immintrin.h" />
+    <ClInclude Include="src\extern\iso646.h" />
+    <ClInclude Include="src\extern\lwpintrin.h" />
+    <ClInclude Include="src\extern\lzcntintrin.h" />
+    <ClInclude Include="src\extern\mm3dnow.h" />
+    <ClInclude Include="src\extern\mmintrin.h" />
+    <ClInclude Include="src\extern\mm_malloc.h" />
+    <ClInclude Include="src\extern\movdirintrin.h" />
+    <ClInclude Include="src\extern\mwaitxintrin.h" />
+    <ClInclude Include="src\extern\nmmintrin.h" />
+    <ClInclude Include="src\extern\pconfigintrin.h" />
+    <ClInclude Include="src\extern\pkuintrin.h" />
+    <ClInclude Include="src\extern\pmmintrin.h" />
+    <ClInclude Include="src\extern\popcntintrin.h" />
+    <ClInclude Include="src\extern\prfchwintrin.h" />
+    <ClInclude Include="src\extern\rdseedintrin.h" />
+    <ClInclude Include="src\extern\rtmintrin.h" />
+    <ClInclude Include="src\extern\sgxintrin.h" />
+    <ClInclude Include="src\extern\shaintrin.h" />
+    <ClInclude Include="src\extern\smmintrin.h" />
+    <ClInclude Include="src\extern\stdalign.h" />
+    <ClInclude Include="src\extern\stdarg.h" />
+    <ClInclude Include="src\extern\stdatomic.h" />
+    <ClInclude Include="src\extern\stdbool.h" />
+    <ClInclude Include="src\extern\stddef.h" />
+    <ClInclude Include="src\extern\stdfix.h" />
+    <ClInclude Include="src\extern\stdint-gcc.h" />
+    <ClInclude Include="src\extern\stdint.h" />
+    <ClInclude Include="src\extern\stdnoreturn.h" />
+    <ClInclude Include="src\extern\tbmintrin.h" />
+    <ClInclude Include="src\extern\tgmath.h" />
+    <ClInclude Include="src\extern\tmmintrin.h" />
+    <ClInclude Include="src\extern\unwind.h" />
+    <ClInclude Include="src\extern\vaesintrin.h" />
+    <ClInclude Include="src\extern\varargs.h" />
+    <ClInclude Include="src\extern\vpclmulqdqintrin.h" />
+    <ClInclude Include="src\extern\wbnoinvdintrin.h" />
+    <ClInclude Include="src\extern\wmmintrin.h" />
+    <ClInclude Include="src\extern\x86intrin.h" />
+    <ClInclude Include="src\extern\xmmintrin.h" />
+    <ClInclude Include="src\extern\xopintrin.h" />
+    <ClInclude Include="src\extern\xsavecintrin.h" />
+    <ClInclude Include="src\extern\xsaveintrin.h" />
+    <ClInclude Include="src\extern\xsaveoptintrin.h" />
+    <ClInclude Include="src\extern\xsavesintrin.h" />
+    <ClInclude Include="src\extern\xtestintrin.h" />
+    <ClInclude Include="src\extra\multiboot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\kernel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+    <None Include="src\extra\boot.S" />
+    <None Include="src\extra\grub.cfg" />
+    <None Include="src\extra\linker.ld" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{72BF2010-83E3-4BBD-A0C0-9B4953314BBD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>wsl make</NMakeBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>wsl make</NMakeBuildCommandLine>
+    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>wsl make</NMakeBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>wsl make</NMakeBuildCommandLine>
+    <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

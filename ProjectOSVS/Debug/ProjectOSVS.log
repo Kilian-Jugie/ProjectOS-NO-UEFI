@@ -1,0 +1,25 @@
+﻿  /mnt/d/cross/bin/i686-elf-cpp src/extra/boot.S | /mnt/d/cross/bin/i686-elf-as -o tmp/boot.o -nostartfiles -nostdlib
+  /mnt/d/cross/bin/i686-elf-g++ -c src/core/kernel.cpp -ffreestanding -O2 -Wall -Wextra -fno-exceptions -fpermissive -fno-rtti;
+  src/core/kernel.cpp: In member function 'void Core::Kernel::handleGRUB(long unsigned int, long unsigned int)':
+src/core/kernel.cpp(57,62): warning G2890A887: comparison of integer expressions of different signedness: 'int' and 'multiboot_uint32_t' {aka 'unsigned int'} [-Wsign-compare]
+     for (i = 0, mod = (multiboot_module_t *)_mbi->mods_addr; i < _mbi->mods_count; i++, mod++)
+                                                              ~~^~~~~~~~~~~~~~~~~~
+  src/core/kernel.cpp: In member function 'void Core::Kernel::initCpu()':
+src/core/kernel.cpp(291,16): warning G7C671A4C: unused variable '__eax' [-Wunused-variable]
+    unsigned int* __eax, *__ebx, *__ecx, *__edx;
+                  ^~~~~
+src/core/kernel.cpp(291,24): warning G7C671A4C: unused variable '__ebx' [-Wunused-variable]
+    unsigned int* __eax, *__ebx, *__ecx, *__edx;
+                          ^~~~~
+src/core/kernel.cpp(291,32): warning G7C671A4C: unused variable '__ecx' [-Wunused-variable]
+    unsigned int* __eax, *__ebx, *__ecx, *__edx;
+                                  ^~~~~
+src/core/kernel.cpp(291,40): warning G7C671A4C: unused variable '__edx' [-Wunused-variable]
+    unsigned int* __eax, *__ebx, *__ecx, *__edx;
+                                          ^~~~~
+  mv *.o tmp/
+  /mnt/d/cross/bin/i686-elf-g++ -T src/extra/linker.ld -o bin/os.bin -ffreestanding -O2 -nostdlib tmp/boot.o tmp/kernel.o -lgcc -Xlinker -zmuldefs
+  cp bin/os.bin bin/isodir/boot/os.bin
+  cp src/extra/grub.cfg bin/isodir/boot/grub/grub.cfg
+  #To add: bin to iso
+  #grub-mkrescue -o bin/os.iso bin/isodir &> log/grub_mkrescue.log

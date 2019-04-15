@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{85790f9a-27e4-493f-9fbe-a49425ebf4c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin">
+      <UniqueIdentifier>{f4353aae-83e0-4631-84d6-ddce018abdf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{3595db38-7258-4b92-8000-c50a5677773f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\extern">
+      <UniqueIdentifier>{b7897b75-c8d0-45d9-9570-19dcbd68fb10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\extra">
+      <UniqueIdentifier>{003df414-4779-497d-a7e5-ee1ac8387e9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\terminal.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\vgautils.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\kernel.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\memory.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512erintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512fintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512ifmaintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512ifmavlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512pfintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vbmi2intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vbmi2vlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vbmiintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vbmivlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vlbwintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vldqintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vnniintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vnnivlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vpopcntdqintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512vpopcntdqvlintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx5124fmapsintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx5124vnniwintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avxintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\bmi2intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\bmiintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\bmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\cet.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\cetintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\clflushoptintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\clwbintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\clzerointrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\cpuid.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\cross-stdarg.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\emmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\f16cintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\float.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\fma4intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\fmaintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\fxsrintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\gcov.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\gfniintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\ia32intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\immintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\iso646.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\lwpintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\lzcntintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\mm_malloc.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\mm3dnow.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\mmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\movdirintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\mwaitxintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\nmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\pconfigintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\pkuintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\pmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\popcntintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\prfchwintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\rdseedintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\rtmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\sgxintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\shaintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\smmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdalign.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdarg.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdatomic.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdbool.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stddef.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdfix.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdint.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdint-gcc.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\stdnoreturn.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\tbmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\tgmath.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\tmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\unwind.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\vaesintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\varargs.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\vpclmulqdqintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\wbnoinvdintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\wmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\x86intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xmmintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xopintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xsavecintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xsaveintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xsaveoptintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xsavesintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\xtestintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\adxintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\ammintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx2intrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512bitalgintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512bwintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512cdintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extern\avx512dqintrin.h">
+      <Filter>src\extern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\defines.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\cpu.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\string.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\asm.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\extra\multiboot.h">
+      <Filter>src\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\maths.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\multiboot_extension.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\kernel.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\extra\grub.cfg">
+      <Filter>src\extra</Filter>
+    </None>
+    <None Include="src\extra\linker.ld">
+      <Filter>src\extra</Filter>
+    </None>
+    <None Include="makefile" />
+    <None Include="src\extra\boot.S">
+      <Filter>src\extra</Filter>
+    </None>
+  </ItemGroup>
+</Project>
